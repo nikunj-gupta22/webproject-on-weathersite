@@ -1,0 +1,169 @@
+
+
+.fa-snowflake{
+    transition:all linear;
+    animation:rot 2s linear infinite;
+}
+@keyframes rot{
+    0%{
+        transform:rotate(0deg);
+    }
+    100%{
+        transform:rotate(100deg);
+    }
+}
+body{
+    display:flex;
+    flex-direction: column;
+    height:100vh;
+    
+}
+#btn{
+border:none;
+padding:0.8rem 1.8rem;
+font-size:10px;
+border-radius: 20px;
+text-transform: uppercase;
+box-shadow:0 8px 6px -6px #000;
+    outline: none;
+}
+
+#btn:hover{
+  box-shadow:0 8px 6px -6px rgb(154, 170, 204);
+}
+
+
+@media only screen and (min-width: 700px) {
+    .main_header_left{
+      height:27rem;
+      display: flex;
+      flex-direction:column;
+      justify-content: center;
+      align-items: flex-start;
+    }
+  }
+  .main_header_left h4{
+      text-transform: capitalize;
+  }
+
+
+.tempinformation{
+    width:50%;
+    background-color:black;
+    margin:auto;
+    margin-top:20px;
+    min-height:15rem;
+}
+.topLayer{
+    display:flex;
+    flex-direction:row;
+    width:100%;
+    justify-content: space-between;
+    color:white;
+    background-color: red;
+}
+.topLayer p{
+    margin:10px;
+}
+
+.mainLayer{
+    display:flex;
+    flex-direction: column;
+    width:100%;
+    height:80%;
+    padding:20px;
+}
+.middle_layer{
+    display: flex;
+    flex-direction: row;
+    width:80%;
+    font-size:45px;
+    justify-content: space-around;
+    text-align: center;
+    color:#fff;
+
+}
+
+.fa{
+    color:blue;
+    font-size:50px;
+}
+
+.data_hide{
+      visibility: hidden;  
+    transition:all 0.3s linear;
+}
+.temp_form{
+  width:60%;
+  position:relative;
+margin:5rem auto;
+}
+.temp_form input[type="text"]{
+    width:100%;
+    padding:14px;
+    outline: none;
+    border:none;
+    font-size:15px;
+    border-radius:3rem;
+    color:#fff;
+    background:#1e202b;
+}
+::placeholder{
+    color:#bfc1c8;
+}
+
+#search{
+    position:absolute;
+    top:10px;
+    right:15px;
+    font-size:16px;
+    border-radius:10px;
+    background-color:#62c4eb;
+    color:#fff;
+   padding:0 10px;
+   
+}
+#search:hover{
+    background-color: #fff;
+    color:#009ad8;
+}
+
+
+
+
+
+  footer{
+      background-color: #000;
+      margin-top:auto;
+  }
+
+  footer p{
+      color:white;
+      text-align: center;
+      margin:0;
+  }
+
+
+  @media only screen and (max-width: 800px){
+    .middle_layer{
+        display: flex;
+        flex-direction: row;
+        width:100%;
+        font-size:20px;
+        justify-content: space-around;
+        text-align: center;
+        color:#fff;
+    
+    }
+.btn{
+    display: block;
+    width:100%;
+}
+    #search{
+       position:relative;
+    margin:auto;  
+    }
+
+
+
+  }
